@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtId"
+        android:text="TextView"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtRemaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCapacity"
+        android:text="TextView"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRemaining"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnIn"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAvailable"
+        android:text="Get In"
+        android:onClick="Decrement"/>
+
+    <Button
+        android:id="@+id/btnOut"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAvailable"
+        android:layout_toRightOf="@+id/btnIn"
+        android:text="Get Out"
+        android:onClick="Increment"/>
+
+
+</RelativeLayout>
